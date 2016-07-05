@@ -49,8 +49,7 @@ hr {
 
 /*
 * Correct `block` display not defined for any HTML5 element in IE 8/9
-* Correct `block` display not defined for `details` or `summary` in IE 10/11
-* and Firefox
+* Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox
 * Correct `block` display not defined for `main` in IE 11
 */
 article,
@@ -96,7 +95,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace; /* Specify the font family of code elements */
+  font-family: monospace, monospace; /* Specify the font family to fix broken monospace in all browsers */
 }
 
 b,
@@ -182,7 +181,7 @@ button::-moz-focus-inner,
   padding: 0;
 }
 
-/* Replace focus style removed in the border reset above */
+/* Replace focus style removed in the border reset above in Firefox 4+ */
 button:-moz-focusring,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -278,7 +277,7 @@ video {
    # Acessibility
    # ================================================================= */
 
-/* Hide content from screens but not screenreaders */
+/* Hide content from screens but not screen readers */
 @media screen {
   [hidden~="screen"] {
     display: inherit;
@@ -299,7 +298,7 @@ video {
   cursor: pointer;
 }
 
-/* Specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements */
+/* Specify the unstyled cursor of disabled, not-editable or otherwise inoperable elements */
 [aria-disabled] {
   cursor: default;
 }
